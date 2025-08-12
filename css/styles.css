@@ -2021,6 +2021,7 @@ a:focus, a:hover {
 }
 
 .main-menu .navigation {
+  margin-left: 330px;
   display: flex;
   gap: 40px;
 }
