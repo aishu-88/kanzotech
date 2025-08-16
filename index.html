@@ -185,9 +185,9 @@
         <header class="bg-surface-color">
 
             <!-- topbar -->
-            <div class="topbar" style="height:180px;">
+            <div class="topbar" style="height:100px;">
                 <div class="tf-container">
-                    <div class="topbar-inner d-flex justify-content-between align-items-center"  style="height: 180px;">
+                    <div class="topbar-inner d-flex justify-content-between align-items-center" style="height: 110px;">
                         <ul class="tf-social d-flex lg-hide">
                             <li><a href="#" class="icon-FacebookLogo"></a></li>
                             <li><a href="#" class="icon-XLogo"></a></li>
@@ -196,7 +196,8 @@
                         </ul>
                         <a href="index-2.html" class="site-logo">
                             <img src="images/logo/imgenew.png" alt="logo" class="main-logo" width="193" height="44"
-                                data-light="images/logo/imgenew.png" data-dark="images/logo/imagenight-removebg-preview.png">
+                                data-light="images/logo/imgenew.png"
+                                data-dark="images/logo/imagenight-removebg-preview.png">
                         </a>
                         <div class="wrap d-flex justify-content-end">
                             <div class="mode-check">
@@ -255,7 +256,7 @@
                             </nav>
                         </div>
 
-                        <div class="logo-center" >
+                        <div class="logo-center" style="position: relative; right: 680px;">
                             <a href="index-2.html" class="site-logo">
                                 <img src="images/logo/imgenew.png" alt="logo" class="main-logo"
                                     data-light="images/logo/imgenew.png"
@@ -314,7 +315,7 @@
                                         <li class="menu-item"><a href="homepage-3.html">Homepage 03</a></li>
                                     </ul> -->
                                 </li>
-                                <li class=" text-menu current-menu"><a href="#" class="toggle splitting ">
+                                <li class=" text-menu current-menu"><a href="categories-1.html" class="toggle splitting ">
                                         <span class="text" data-splitting>Features</span>
                                         <span class="text" data-splitting>Features</span>
                                     </a>
@@ -341,20 +342,22 @@
                                         <span class="text" data-splitting>Categories</span>
                                         <span class="text" data-splitting>Categories</span>
                                     </a>
-                                                                            <ul class="submenu">
-                                            <li class="menu-item"><a href="categories-1.html">Plumbing and Water System</a>
-                                            </li>
-                                            <li class="menu-item"><a href="categories-1.html">Plumbing and Sanitary Fixtures</a>
-                                            </li>
-                                            <li class="menu-item"><a href="categories-1.html">Building Accessories</a>
-                                            </li>
-                                            <li class="menu-item"><a href="categories-1.html">Construction power tools and Equipment</a>
-                                            </li>
-                                            <li class="menu-item"><a href="categories-1.html">New Innovation</a>
-                                            </li>
-                                            <li class="menu-item"><a href="categories-1.html">Let Life Flow with Kanzo</a>
-                                            </li>
-                                        </ul>
+                                    <ul class="submenu">
+                                        <li class="menu-item"><a href="categories-1.html">Plumbing and Water System</a>
+                                        </li>
+                                        <li class="menu-item"><a href="categories-1.html">Plumbing and Sanitary
+                                                Fixtures</a>
+                                        </li>
+                                        <li class="menu-item"><a href="categories-1.html">Building Accessories</a>
+                                        </li>
+                                        <li class="menu-item"><a href="categories-1.html">Construction power tools and
+                                                Equipment</a>
+                                        </li>
+                                        <li class="menu-item"><a href="categories-1.html">New Innovation</a>
+                                        </li>
+                                        <li class="menu-item"><a href="categories-1.html">Let Life Flow with Kanzo</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="text-menu">
                                     <a href="about.html" class="toggle splitting ">
@@ -399,11 +402,7 @@
                 justify-content: flex-start;
             }
 
-            .main-header .logo-center {
-                flex: 0 0 auto;
-                display: flex;
-                justify-content: center;
-            }
+
 
             .main-header .header-right {
                 flex: 1;
@@ -966,7 +965,7 @@
             </div>
             <!-- /End section-most-popular -->
 
-            
+
 
 
             <!-- section-newsletter -->
@@ -1385,17 +1384,56 @@
                 </div>
             </div>
             <!-- /End section-highlight -->
-             <!-- testimonilas///////////////////////// -->
+            <!-- testimonilas///////////////////////// -->
 
 
 
 
             <style>
+                /* CSS Variables for Light/Dark Mode */
+                :root {
+                    --bg-primary: #ffffff;
+                    --bg-secondary: #f8f9fa;
+                    --text-primary: #333333;
+                    --text-secondary: #666666;
+                    --text-muted: #999999;
+                    --card-bg: #ffffff;
+                    --card-shadow: rgba(0, 0, 0, 0.1);
+                    --card-shadow-hover: rgba(0, 0, 0, 0.15);
+                    --border-color: #e0e0e0;
+                    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                    --gradient-hover: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+                    --modal-overlay: rgba(0, 0, 0, 0.9);
+                    --video-placeholder: linear-gradient(45deg, #ffffff, #d4d3d5);
+                }
+
+                /* Dark Mode Variables */
+                body.dark-mode {
+                    --bg-primary: #161616;
+                    --bg-secondary: #1a1a1a;
+                    --text-primary: #ffffff;
+                    --text-secondary: #cccccc;
+                    --text-muted: #999999;
+                    --card-bg: #2a2a2a;
+                    --card-shadow: rgba(0, 0, 0, 0.3);
+                    --card-shadow-hover: rgba(0, 0, 0, 0.4);
+                    --border-color: #404040;
+                    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                    --gradient-hover: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+                    --modal-overlay: rgba(0, 0, 0, 0.95);
+                    --video-placeholder: linear-gradient(45deg, #3a3a3a, #2a2a2a);
+                }
+
+
+
+
+
                 .section-video-testimonials {
                     padding: 80px 0;
-                    background: white;
+                    background: var(--bg-primary);
                     position: relative;
                     overflow: hidden;
+                    transition: background-color 0.3s ease;
                 }
 
                 .tf-container {
@@ -1414,16 +1452,18 @@
                 .testimonials-heading-section h3 {
                     font-size: 4.5rem;
                     font-weight: 700;
-                    color: #333;
+                    color: var(--text-primary);
                     margin-bottom: 16px;
                     letter-spacing: -0.5px;
+                    transition: color 0.3s ease;
                 }
 
                 .testimonials-heading-section p {
-                    font-size: 12px;
-                    color: #666;
+                    font-size: 1.125rem;
+                    color: var(--text-secondary);
                     max-width: 600px;
                     margin: 0 auto;
+                    transition: color 0.3s ease;
                 }
 
                 .testimonials-grid {
@@ -1434,17 +1474,18 @@
                 }
 
                 .video-testimonial-card {
-                    background: white;
+                    background: var(--card-bg);
                     border-radius: 16px;
                     overflow: hidden;
-                    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    box-shadow: 0 20px 40px var(--card-shadow);
+                    transition: all 0.3s ease;
                     position: relative;
+                    border: 1px solid var(--border-color);
                 }
 
                 .video-testimonial-card:hover {
                     transform: translateY(-10px);
-                    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+                    box-shadow: 0 30px 60px var(--card-shadow-hover);
                 }
 
                 .video-container {
@@ -1458,11 +1499,12 @@
                 .video-placeholder {
                     width: 100%;
                     height: 100%;
-                    background: linear-gradient(45deg, #ffffff, #d4d3d5);
+                    background: var(--video-placeholder);
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     position: relative;
+                    transition: background 0.3s ease;
                 }
 
                 .play-button {
@@ -1495,6 +1537,8 @@
 
                 .testimonial-content {
                     padding: 30px;
+                    background: var(--card-bg);
+                    transition: background-color 0.3s ease;
                 }
 
                 .client-info {
@@ -1507,7 +1551,7 @@
                     width: 60px;
                     height: 60px;
                     border-radius: 50%;
-                    background: linear-gradient(45deg, #667eea, #764ba2);
+                    background: var(--gradient-primary);
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -1520,21 +1564,24 @@
                 .client-details h4 {
                     font-size: 1.125rem;
                     font-weight: 600;
-                    color: #333;
+                    color: var(--text-primary);
                     margin-bottom: 4px;
+                    transition: color 0.3s ease;
                 }
 
                 .client-details span {
-                    color: #666;
+                    color: var(--text-secondary);
                     font-size: 0.875rem;
+                    transition: color 0.3s ease;
                 }
 
                 .testimonial-text {
                     font-size: 1rem;
                     line-height: 1.7;
-                    color: #555;
+                    color: var(--text-secondary);
                     margin-bottom: 20px;
                     font-style: italic;
+                    transition: color 0.3s ease;
                 }
 
                 .rating {
@@ -1566,7 +1613,7 @@
                 }
 
                 .cta-button {
-                    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                    background: var(--gradient-primary);
                     color: white;
                     padding: 15px 30px;
                     border-radius: 50px;
@@ -1579,9 +1626,11 @@
                 }
 
                 .cta-button:hover {
-                    background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+                    background: var(--gradient-hover);
                     transform: translateY(-2px);
                     box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+                    text-decoration: none;
+                    color: white;
                 }
 
                 .video-modal {
@@ -1590,11 +1639,12 @@
                     left: 0;
                     width: 100%;
                     height: 100%;
-                    background: rgba(0, 0, 0, 0.9);
+                    background: var(--modal-overlay);
                     display: none;
                     align-items: center;
                     justify-content: center;
                     z-index: 1000;
+                    transition: background-color 0.3s ease;
                 }
 
                 .video-modal.active {
@@ -1632,6 +1682,15 @@
                     color: white;
                 }
 
+                /* Dark mode specific adjustments */
+                body.dark-mode .play-button {
+                    background: rgba(255, 255, 255, 0.95);
+                }
+
+                body.dark-mode .play-button:hover {
+                    background: white;
+                }
+
                 @media (max-width: 768px) {
                     .testimonials-grid {
                         grid-template-columns: 1fr;
@@ -1639,7 +1698,7 @@
                     }
 
                     .testimonials-heading-section h3 {
-                        font-size: 2rem;
+                        font-size: 2.5rem;
                     }
 
                     .video-container {
@@ -1655,6 +1714,9 @@
                     }
                 }
             </style>
+            </head>
+
+            <!-- <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙 Dark Mode</button> -->
 
             <div class="section-video-testimonials">
                 <div class="tf-container">
@@ -1828,7 +1890,9 @@
                         </div>
                     </div>
 
-
+                    <div class="cta-section">
+                        <a href="#" class="cta-button">Start Your Journey Today</a>
+                    </div>
                 </div>
             </div>
 
@@ -1843,11 +1907,28 @@
             </div>
 
             <script>
+                // function toggleDarkMode() {
+                //     document.body.classList.toggle('dark-mode');
+                //     const button = document.querySelector('.dark-mode-toggle');
+                //     if (document.body.classList.contains('dark-mode')) {
+                //         button.textContent = '☀️ Light Mode';
+                //         localStorage.setItem('darkMode', 'enabled');
+                //     } else {
+                //         button.textContent = '🌙 Dark Mode';
+                //         localStorage.setItem('darkMode', 'disabled');
+                //     }
+                // }
+
+                // Check for saved dark mode preference
+                if (localStorage.getItem('darkMode') === 'enabled') {
+                    document.body.classList.add('dark-mode');
+                    document.querySelector('.dark-mode-toggle').textContent = '☀️ Light Mode';
+                }
+
                 function openModal(videoId) {
                     const modal = document.getElementById('videoModal');
                     const modalVideo = document.getElementById('modalVideo');
 
-                    // Here you would load the actual video based on videoId
                     modalVideo.innerHTML = `
                 <div style="color: white; text-align: center;">
                     <h3>Video: ${videoId}</h3>
@@ -1896,6 +1977,7 @@
                 });
             </script>
 
+
             <!-- section-instagram -->
             <div class="section-instagram tf-spacing-3">
                 <div class="tf-container w-xxl">
@@ -1941,6 +2023,38 @@
 
         </div>
 
+        <div class="floating-icons">
+            <a href="https://wa.me/1234567890" class="floating-icon whatsapp-icon pulse"
+                data-tooltip="Chat with us on WhatsApp" target="_blank">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.893 3.488" />
+                </svg>
+            </a>
+
+            <a href="tel:+1234567890" class="floating-icon call-icon" data-tooltip="Call us now">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                </svg>
+            </a>
+        </div>
+
+        <script>
+            // Add click tracking (optional)
+            document.querySelectorAll('.floating-icon').forEach(icon => {
+                icon.addEventListener('click', function () {
+                    console.log('Contact icon clicked:', this.dataset.tooltip);
+                    // Add analytics tracking here if needed
+                });
+            });
+
+            // Remove pulse animation after a few seconds
+            setTimeout(() => {
+                document.querySelector('.pulse').classList.remove('pulse');
+            }, 8000);
+        </script>
+
         <!-- Footer -->
         <div class="tf-container w-xxl tf-spacing-8 pt-0">
             <footer class="footer style-1">
@@ -1972,10 +2086,10 @@
                                     <li class="text-caption-1 ">
                                         <a href="about.html" class="link">About Us</a>
                                     </li>
-                                     <li class="text-caption-1 ">
+                                    <li class="text-caption-1 ">
                                         <a href="about.html" class="link">Features</a>
                                     </li>
-                                     <li class="text-caption-1 ">
+                                    <li class="text-caption-1 ">
                                         <a href="about.html" class="link">Online Store</a>
                                     </li>
                                     <li class="text-caption-1 ">
