@@ -1,6 +1,6 @@
 /* ---------------------------------------------------------
     * Name: 
-    * Version: 1.0.0
+    * Version: 1.main0.0
     * Author: Themesflat
     * Author URI: http://themesflat.com 
 
@@ -284,10 +284,12 @@ textarea {
 }
 
 img {
-  height: auto;
-  max-width: 100%;
+  height: 110;
+  width: 85%;
+  max-width: 108%;
   vertical-align: middle;
   -ms-interpolation-mode: bicubic;
+  margin-left: -22px;
 }
 
 p {
@@ -1431,13 +1433,22 @@ a:focus, a:hover {
   height: auto !important;
 }
 
-.site-logo {
-  max-width: 193px;
+.site-image {
+  /* max-width: 193px; */
+  width: 85%;
+  height: 195px;
 }
-.site-logo img {
-  width: 70%;
-}
+/* .site-logo img {
+  width: 85%;
+  height: 195px;
+} */
 
+.site-logo{
+ left: 50px;
+ right: 60px;
+  /* padding: left 10px; ; */
+
+}
 .split-text {
   overflow: hidden;
 }
@@ -1578,7 +1589,8 @@ a:focus, a:hover {
 
 @media (max-width: 767px) {
   .site-logo img {
-    width: 132px;
+    height: 93px;
+    width: 103px;
   }
 }
 
@@ -1794,6 +1806,10 @@ a:focus, a:hover {
   .topbar .site-logo {
     text-align: center;
     margin-left: 30px;
+    max-width: 125px;
+    width: 176px;
+    /* height: 120px;
+    width: 100%; */
   }
 }
 .topbar.style-1 {
@@ -4366,7 +4382,7 @@ a.mapboxgl-ctrl-logo {
     margin-bottom: 44px;
   }
   .box-author.style-1.v2 .avatar {
-    margin-bottom: 43px;
+    margin-bottom: -31px;
   }
   .box-author.style-1.v2 .info {
     margin-bottom: 24px;
@@ -5828,3 +5844,396 @@ a.mapboxgl-ctrl-logo {
                 display: none; /* Hide tooltips on mobile */
             }
         }
+
+
+/* Default: Light mode active */
+.light-logo {
+  display: inline;
+  width: 184px;
+  height: auto;
+  padding-left: 4px;
+  margin-right: -23px;
+}
+.dark-logo {
+  display: none;
+  width: 218px;
+  height: auto;
+}
+
+/* When body has dark mode */
+body.dark-mode .light-logo {
+  display: none;
+}
+body.dark-mode .dark-logo {
+  display: inline;
+}
+
+
+
+        /* /////////////////////////// */
+        /* Responsive for tablets & mobiles (768px and below) */
+@media (max-width: 768px) {
+  .main-logo {
+    width: 101px;   /* adjust as you like */
+    height:96px;  /* keep aspect ratio */
+  }
+}
+
+/* search icon */
+
+.icon-search {
+    font-size: 1.5em !important; /* Adjust as needed */
+    /* width: 0.5em; */
+    height: 0.5em;
+    vertical-align: middle;
+    position: relative;
+    top: 10px;
+    padding-bottom: 50px;
+    
+}
+/* scrolling search */
+
+.search_btn-find{
+  
+
+    width: 0.5em;
+    height: 0.5em;
+    vertical-align: middle;
+    /* position: relative; */
+    top: 20px;
+    padding-bottom: 50px;
+}
+
+
+
+/* view search */
+
+
+
+
+
+
+/* Default style (desktop/tablet) */
+.btn-find {
+  position: relative; /* normal flow */
+}
+
+
+
+.main-menu.lg-hide {
+    padding-right: 116px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    position: static !important; /* Remove right offset */
+    /* nav-left: 20px; */
+}
+
+.main-menu.lg-hide .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px; /* Adjust spacing between nav items */
+}
+
+
+
+.main-menu {
+  position: relative;
+  left: 0; /* default (no big push) */
+}
+
+/* Desktop view (big screens) */
+@media (min-width: 1024px) {
+  .main-menu {
+    left: 200px; /* adjust this value to move left */
+  }
+}
+
+/* Tablet & Mobile view */
+@media (max-width: 768px) {
+  .main-menu {
+    left: 20px;  /* just a small push on mobile */
+  }
+}
+
+
+.catgory1-logo {
+  /* height: 134px; */
+  /* width: 102%; */
+  max-width: 108%;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+  margin-left: -22px;
+}
+
+
+
+
+/* scroll search mobile view */
+/* Default (desktop/tablet) */
+.search_btn-find {
+  position: relative;
+  right: 0; /* stays as-is */
+}
+
+/* Mobile view (≤768px) */
+@media (max-width: 768px) {
+  .search_btn-find {
+    position: relative;
+    right: 15px;  /* move left by pushing it from right */
+    margin-top: 5px;
+  }
+}
+
+/* scrolling search */
+.btn-find_search {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  padding-left: 0%;
+  font-size: 20px;
+}
+.search_btn-find:hover {
+  color: #007bff; /* example hover color */
+}
+
+/* Default size (desktop/tablet) */
+.btn-find_search i {
+  font-size: 22px;   /* normal size */
+}
+
+/* Mobile view (≤768px) */
+@media (max-width: 768px) {
+  .btn-find_search i {
+    font-size: 16px;   /* smaller size on mobile */
+  }
+}
+
+
+
+
+/* side pic */
+.site-logos {
+  position: relative;
+  right: 822px;
+  width: 153px;              /* Minimum width for logo */
+  margin-left: 0 !important; /* Ensure logo is flush left */
+  padding-right: 15px;
+
+}
+
+.logo-center {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.logo-center .site-logos {
+    margin-left: 0;
+}
+
+.logo-center img.main-logo {
+    display: block;
+    margin-left: 0;
+}
+
+.thumbs-img {
+    /* Add your custom styles here */
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.site-logo-down{
+    width: 147px !important;
+    height: 37px;
+    
+}
+
+.main-logooo{
+  padding-bottom: 109px;
+}
+/* catagory logo responsive */
+
+/* Default (desktop) */
+/* .main-logo {
+  width: 90px;
+  height: auto;
+  padding-right: 10px;
+} */
+
+/* Tablet (≤768px) */
+@media (max-width: 768px) {
+  .main-logo {
+    width: 111px;
+        padding-bottom: 9px;
+        padding-left: 16px;
+  }
+}
+
+/* Mobile (≤480px) */
+@media (max-width: 480px) {
+  .main-logo {
+    width: 55px;   /* even smaller size */
+    padding-right: 4px;
+  }
+}
+
+/* responsive of search */
+
+/* Default (desktop/tablet) */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* keep items evenly spaced */
+}
+
+/* Mobile (≤320px) */
+@media (max-width: 320px) {
+  .header-right {
+    justify-content: flex-start; /* push everything to the left */
+    gap: 1px;  /* smaller gaps for tight space */
+    margin-left: -55px; /* nudge section a little left */
+    margin-right: 15px;
+  }
+
+  /* .btn-find_search i {
+    font-size: 16px; /* shrink search icon on small screens */
+  }
+
+ 
+
+  .burger span {
+    width: 18px; /* smaller burger menu */
+  } */
+
+}
+
+/* Floating Icons Base */
+.floating-icons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 1000;
+}
+
+.floating-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #1e9d4d; /* WhatsApp green by default */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+/* WhatsApp specific */
+.whatsapp-icon {
+  background: #36965a;
+}
+
+/* Call specific */
+.call-icon {
+  background: #155fad;
+}
+
+/* Bounce animation */
+.floating-icon {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-8px);
+  }
+  60% {
+    transform: translateY(-4px);
+  }
+}
+
+.img-thumbs img.lazyload[alt="page-title"] {
+    width: 105% !important;   /* or set a specific px value, e.g. 1300px */
+    height: 680px;            /* keep height unchanged */
+    object-fit: cover;
+}
+/* kanzo-logo-1 */
+.navigation li a {
+  color: inherit; /* keeps default color */
+  transition: color 0.3s ease; /* smooth transition */
+}
+
+/* .navigation li a:hover {
+  color: #28a745; /* green on hover */
+} */
+
+.navigations li a:hover {
+  color: #a0d7ad; /* green on hover */
+}
+
+i
+/* Target menu links on hover */
+/* .main-menu .navigation li a:hover span.text {
+    color: rgb(0, 173, 239); /* Change menu name color */
+    /* transition: color 0.3s ease-in-out; /* Smooth effect */
+} */ */
+
+/* Optional: submenu hover too */
+.main-menu .navigation li ul.submenu li a:hover {
+    color: rgb(0, 173, 239);
+}
+
+.wg-pagination li a {
+  color: #000; /* default text color */
+  background: #f1f1f1; /* default bg */
+  transition: all 0.3s ease;
+}
+
+.wg-pagination li a:hover {
+  background: rgb(0, 173, 239);/* hover blue */
+  color: #fff;
+}
+
+/* when clicked and active */
+
+.wg-pagination li a.active {
+  background: rgb(0, 173, 239); /* blue background */
+  color: #fff;
+}
+
+/* popular tags change hover color */
+.list li a {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 6px;
+  background: #f1f1f1; /* default background */
+  color: #000; /* default text color */
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.list li a:hover {
+  background: #00adef; /* blue on hover */
+  color: #fff; /* make text white for contrast */
+}
+
+
+
+
+
+

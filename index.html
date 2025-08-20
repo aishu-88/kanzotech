@@ -185,7 +185,7 @@
         <header class="bg-surface-color">
 
             <!-- topbar -->
-            <div class="topbar" style="height:100px;">
+            <div class="topbar" style="height: 121px; padding-top: 10px;">
                 <div class="tf-container">
                     <div class="topbar-inner d-flex justify-content-between align-items-center" style="height: 110px;">
                         <ul class="tf-social d-flex lg-hide">
@@ -195,9 +195,8 @@
                             <li><a href="#" class="icon-InstagramLogo"></a></li>
                         </ul>
                         <a href="index-2.html" class="site-logo">
-                            <img src="images/logo/imgenew.png" alt="logo" class="main-logo" width="193" height="44"
-                                data-light="images/logo/imgenew.png"
-                                data-dark="images/logo/imagenight-removebg-preview.png">
+                            <img src="images/logo/favicon-main.png" alt="logo" class="main-logo" width="80" height="80" padding-right="10px"
+                                data-light="images/logo/favicon-main.png" data-dark="images/logo/favicon-main.png">
                         </a>
                         <div class="wrap d-flex justify-content-end">
                             <div class="mode-check">
@@ -207,6 +206,9 @@
                                 </div>
                                 <span class="label dark">Dark</span>
                             </div>
+                            <!-- search -->
+                            <a class="btn-find" href="#canvasSearch" data-bs-toggle="offcanvas"><i
+                                    class="icon-search" ></i></a>
                             <a href="contact.html" class="tf-btn style-2 btn-switch-text animate-hover-btn md-hide">
                                 <span>
                                     <span class="btn-double-text" data-text="Let's Talk!">Let's Talk!</span>
@@ -224,7 +226,7 @@
                     <div class="header-inner main-header" style="height: 130px;">
 
                         <div class="header-left">
-                            <nav class="main-menu lg-hide">
+                            <nav class="main-menu lg-hide" style="position: relative; left: 700px;">
                                 <ul class="navigation">
                                     <li class="text-menu current-menu"><a href="index.html"
                                             class="toggle splitting"><span class="text" data-splitting>Home</span><span
@@ -238,8 +240,8 @@
                                                 data-splitting>Categories</span></a>
                                         <ul class="submenu">
                                             <li><a href="categories-1.html">Plumbing and Water System</a></li>
-                                            <li><a href="categories-1.html">Plumbing and Sanitary Fixtures</a></li>
-                                            <li><a href="categories-1.html">Building Accessories</a></li>
+                                            <li><a href="category-second.html">Plumbing and Sanitary Fixtures</a></li>
+                                            <li><a href="category3-building.html">Building Accessories</a></li>
                                             <li><a href="categories-1.html">Construction power tools and Equipment</a>
                                             </li>
                                             <li><a href="categories-1.html">New Innovation</a></li>
@@ -256,15 +258,15 @@
                             </nav>
                         </div>
 
-                        <div class="logo-center" style="position: relative; right: 680px;">
-                            <a href="index-2.html" class="site-logo">
+                        <div class="logo-center" >
+                            <a href="index-2.html" class="site-logos">
                                 <img src="images/logo/imgenew.png" alt="logo" class="main-logo"
                                     data-light="images/logo/imgenew.png"
                                     data-dark="images/logo/imagenight-removebg-preview.png">
                             </a>
                         </div>
 
-                        <div class="header-right d-flex align-items-center">
+                        <div class="header-right d-flex align-items-center" style="gap: 1.5px 2px 2px ;" >
                             <div class="mode-check">
                                 <span class="label light sm-hide">Light</span>
                                 <div class="toggle toggle-switch-mode">
@@ -272,10 +274,11 @@
                                 </div>
                                 <span class="label dark">Dark</span>
                             </div>
-                            <a class="btn-find" href="#canvasSearch" data-bs-toggle="offcanvas"><i
-                                    class="icon-search"></i></a>
+                            <!-- scrolling search -->
+                         <a class="btn-find_search" href="#canvasSearch" data-bs-toggle="offcanvas"><i
+                                    class="icon-search" ></i></a>
                             <a href="contact.html" class="tf-btn style-2 animate-hover-btn btn-switch-text md-hide">
-                                <span><span class="btn-double-text" data-text="Let's Talk!">Let's Talk!</span></span>
+                                <span><span class="btn-double-text" data-text="Let's Talk!">Contact</span></span>
                             </a>
                             <div class="mobile-button d-xl-none" data-bs-toggle="offcanvas"
                                 data-bs-target="#menu-mobile" aria-controls="menu-mobile">
@@ -315,7 +318,8 @@
                                         <li class="menu-item"><a href="homepage-3.html">Homepage 03</a></li>
                                     </ul> -->
                                 </li>
-                                <li class=" text-menu current-menu"><a href="categories-1.html" class="toggle splitting ">
+                                <li class=" text-menu current-menu"><a href="categories-2.html"
+                                        class="toggle splitting ">
                                         <span class="text" data-splitting>Features</span>
                                         <span class="text" data-splitting>Features</span>
                                     </a>
@@ -338,6 +342,14 @@
                                         </li>
                                     </ul>
                                 </li> -->
+                                 <li class=" text-menu">
+                                    <a href="careers.html"
+                                        class="toggle splitting ">
+                                        <span class="text" data-splitting>Careers</span>
+                                        <span class="text" data-splitting>Careers</span>
+                                    </a>
+
+
                                 <li class="has-child text-menu"><a href="#" class="toggle splitting link-no-action">
                                         <span class="text" data-splitting>Categories</span>
                                         <span class="text" data-splitting>Categories</span>
@@ -345,10 +357,10 @@
                                     <ul class="submenu">
                                         <li class="menu-item"><a href="categories-1.html">Plumbing and Water System</a>
                                         </li>
-                                        <li class="menu-item"><a href="categories-1.html">Plumbing and Sanitary
+                                        <li class="menu-item"><a href="category-second.html">Plumbing and Sanitary
                                                 Fixtures</a>
                                         </li>
-                                        <li class="menu-item"><a href="categories-1.html">Building Accessories</a>
+                                        <li class="menu-item"><a href="category3-building.html">Building Accessories</a>
                                         </li>
                                         <li class="menu-item"><a href="categories-1.html">Construction power tools and
                                                 Equipment</a>
@@ -451,12 +463,12 @@
                                 System</a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="categories-1.html" class="tag text_on-surface-color h6">Plumbing and Sanitary
+                            <a href="category-second.html" class="tag text_on-surface-color h6">Plumbing and Sanitary
                                 Fixtures
                                 Tips</a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="categories-1.html" class="tag text_on-surface-color h6">Building Accessories
+                            <a href="category3-building.html" class="tag text_on-surface-color h6">Building Accessories
                             </a>
                         </div>
                         <div class="swiper-slide">
@@ -596,10 +608,15 @@
                             <h5 class="heading-title">Did You Know?</h5>
 
                             <!-- Logo/Avatar section -->
-                            <div class="info mb_20">
-                                <div class="avatar mb_12">
-                                    <img src="images/avatar/nightmode-removebg-preview.png" alt="Kanzotech Logo">
-                                </div>
+                            <div class="info mb_20" style="padding-bottom: 20px;">
+                               <div class="avatar mb_12" style="height: 257px;">
+  <!-- Light mode logo -->
+  <img src="images/logo/firstnew.png" alt="Kanzotech Logo" class="logo-img light-logo">
+
+  <!-- Dark mode logo -->
+  <img src="images/logo/darkimg.png" alt="Kanzotech Logo" class="logo-img dark-logo">
+</div>
+
                                 <h4 class="mb_4"><a href="#" class="link">Kanzotech</a></h4>
                                 <p class="text-body-1">Portland, Oregon, USA</p>
                             </div>
@@ -635,15 +652,15 @@
 
                             <div class="content-boxes">
                                 <div class="info-box mb_16 p_16 rounded">
-                                    <h6 class="fw-6 mb_8">Quick Tip</h6>
-                                    <p class="text-body-2">Minimalist design reduces visual clutter and improves focus
-                                        on essential elements.</p>
+                                    <h6 class="fw-6 mb_8" style="background-color: #c1c1bb;">Quick Tip</h6>
+                                    <p><img src="images/page-title/blog1.jpg" alt="Quick Tip Image" style="width: 155%; max-width: 303px; padding-left: 22px;"></p>
+
                                 </div>
 
                                 <div class="info-box mb_16 p_16 rounded">
-                                    <h6 class="fw-6 mb_8">Fun Fact</h6>
-                                    <p class="text-body-2">Studies show that minimalist spaces can reduce stress and
-                                        increase productivity by up to 25%.</p>
+                                    <h6 class="fw-6 mb_8"  style="background-color: #c1c1bb; ">Fun Fact</h6>
+                                <p><img src="images/page-title/blog2.jpg" alt="Quick Tip Image" style="width: 155%; max-width: 303px; padding-left: 22px;"></p>
+
                                 </div>
                             </div>
 
@@ -713,7 +730,7 @@
                                             alt="feature post">
                                     </a>
                                     <div class="content">
-                                        <h6 class="mb_2"><a href="categories-1.html" class="link">Plumbing and Sanitary
+                                        <h6 class="mb_2"><a href="category-second.html" class="link">Plumbing and Sanitary
                                                 Fixtures</a></h6>
                                         <p class="text-caption-1">182 Posts</p>
                                     </div>
@@ -729,7 +746,7 @@
                                             alt="feature post">
                                     </a>
                                     <div class="content">
-                                        <h6 class="mb_2"><a href="categories-1.html" class="link">Building
+                                        <h6 class="mb_2"><a href="category3-building.html" class="link">Building
                                                 Accessories</a></h6>
                                         <p class="text-caption-1">124 Posts</p>
                                     </div>
@@ -1133,7 +1150,7 @@
                             </div>
                             <span class="h5 number">231 Posts</span>
                         </a>
-                        <a href="categories-1.html" class="media-list-item d-flex align-items-center gap_12 ">
+                        <a href="category-second.html" class="media-list-item d-flex align-items-center gap_12 ">
                             <div class="heading-title">
                                 <h3 class="title">Sanitary Fixtures</h3>
                                 <div class="image">
@@ -1143,7 +1160,7 @@
                             </div>
                             <span class="h5 number">182 Posts</span>
                         </a>
-                        <a href="categories-1.html" class="media-list-item d-flex align-items-center gap_12 ">
+                        <a href="category3-building.html" class="media-list-item d-flex align-items-center gap_12 ">
                             <div class="heading-title">
                                 <h3 class="title">Building Accessories</h3>
                                 <div class="image">
@@ -1890,9 +1907,9 @@
                         </div>
                     </div>
 
-                    <div class="cta-section">
+                    <!-- <div class="cta-section">
                         <a href="#" class="cta-button">Start Your Journey Today</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -2060,9 +2077,9 @@
             <footer class="footer style-1">
                 <div class="footer-body">
                     <div class="footer-about footer-item">
-                        <a href="index-2.html" class="site-logo mb_20">
-                            <img src="images/logo/logo.svg" alt="logo" height="193" width="44" class="main-logo"
-                                data-light="images/logo/logo.svg" data-dark="images/logo/logo-dark.svg">
+                        <a href="index-2.html" class="site-logo-down">
+                            <img src="images/logo/favicon-main.png" alt="logo"  class="main-logooo" height="20px" width="33"
+                                data-light="images/logo/favicon-main.png" data-dark="images/logo/logo-dark.svg">
                         </a>
                         <p class="text-caption-1 mb_28">Welcome to your go-to destination for insightful news! Discover
                             carefully selected articles that inform, inspire.</p>
@@ -2114,7 +2131,7 @@
                                         <a href="categories-1.html" class="link">Sanitary Fixtures</a>
                                     </li>
                                     <li class="text-caption-1 ">
-                                        <a href="categories-1.html" class="link">Building Accessories</a>
+                                        <a href="category3-building.html" class="link">Building Accessories</a>
                                     </li>
                                     <li class="text-caption-1 ">
                                         <a href="categories-1.html" class="link">Construction power tools</a>
@@ -2451,7 +2468,7 @@
                                 <li class="menu-item"><a href="categories-1.html">Plumbing and Sanitary
                                         Fixtures</a>
                                 </li>
-                                <li class="menu-item"><a href="categories-1.html">Building Accessories</a>
+                                <li class="menu-item"><a href="category3-building.html">Building Accessories</a>
                                 </li>
                                 <li class="menu-item"><a href="categories-1.html">Construction power tools
                                         and Equipment</a>
