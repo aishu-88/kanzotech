@@ -6180,23 +6180,23 @@ body.dark-mode .dark-logo {
 
 /* .navigation li a:hover {
   color: #28a745; /* green on hover */
-} */
+
 
 .navigations li a:hover {
   color: #a0d7ad; /* green on hover */
 }
 
-i
+
 /* Target menu links on hover */
 /* .main-menu .navigation li a:hover span.text {
     color: rgb(0, 173, 239); /* Change menu name color */
     /* transition: color 0.3s ease-in-out; /* Smooth effect */
-} */ */
+
 
 /* Optional: submenu hover too */
-.main-menu .navigation li ul.submenu li a:hover {
+/* .main-menu .navigation li ul.submenu li a:hover {
     color: rgb(0, 173, 239);
-}
+} */
 
 .wg-pagination li a {
   color: #000; /* default text color */
@@ -6211,10 +6211,10 @@ i
 
 /* when clicked and active */
 
-.wg-pagination li a.active {
-  background: rgb(0, 173, 239); /* blue background */
+/* .wg-pagination li a.active {
+  background: rgb(0, 173, 239); 
   color: #fff;
-}
+} */
 
 /* popular tags change hover color */
 .list li a {
@@ -6227,13 +6227,17 @@ i
   transition: all 0.3s ease;
 }
 
-.list li a:hover {
-  background: #00adef; /* blue on hover */
-  color: #fff; /* make text white for contrast */
+/* .list li a:hover {
+  background: #00adef; 
+  color: #fff;
 }
+ */
 
 
 
 
 
-
+/* .menu-blue .navigation li a:hover span.text {
+    color: rgb(0, 173, 239);
+    transition: color 0.3s ease-in-out;
+} */
