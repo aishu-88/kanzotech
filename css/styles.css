@@ -672,7 +672,7 @@ h5,
 
 h6,
 .h6 {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 24px;
 }
 
@@ -857,7 +857,7 @@ h6,
 }
 
 .fw-6 {
-  font-weight: 600 !important;
+  font-weight: 800 !important;
 }
 
 .fw-7 {
@@ -1853,7 +1853,7 @@ a:focus, a:hover {
   gap: 30px;
 }
 .header-menu.style-1 .header-right {
-  gap: 42px;
+  gap: 31px;
 }
 .header-menu.style-1 .main-menu .navigation > li {
   padding: 47px 0;
@@ -5931,6 +5931,8 @@ body.dark-mode .dark-logo {
 }
 
 .main-menu.lg-hide .navigation {
+  /* position: relative;
+  left: 123px; */
     display: flex;
     justify-content: center;
     align-items: center;
