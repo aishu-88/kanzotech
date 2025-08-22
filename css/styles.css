@@ -33,6 +33,7 @@
   --Line-2: #d9d9d9;
   --Line-dark: rgba(255, 255, 255, 0.1);
   --Bg-color-1: #00000033;
+  --light-black:#111010;
 }
 
 /*---------- Reset css styles ----------- */
@@ -181,6 +182,7 @@ html {
 }
 
 body {
+  zoom: 90%;
   line-height: 1;
   padding: 0 !important;
   font-family: "Manrope", sans-serif;
@@ -1023,7 +1025,7 @@ a:focus, a:hover {
 /* backgroud
 -------------------------------------------------------------- */
 .bg-surface-color {
-  background-color: var(--Surface-light);
+  background-color:var(--light-black);
 }
 
 .bg-surface2-color {
@@ -1546,7 +1548,7 @@ a:focus, a:hover {
 .tf-social {
   gap: 24px;
   font-size: 28px;
-  color: var(--On-surface);
+  color: var(--Line);
 }
 .tf-social a:hover {
   -webkit-transform: translate3d(0, -2px, 0);
@@ -1806,7 +1808,7 @@ a:focus, a:hover {
   .topbar .site-logo {
     text-align: center;
     margin-left: 30px;
-    max-width: 125px;
+    max-width: 150px;
     width: 176px;
     /* height: 120px;
     width: 100%; */
@@ -1833,7 +1835,7 @@ a:focus, a:hover {
 .header-menu {
   position: relative;
   z-index: 99;
-  background-color: var(--Surface);
+  background-color: var(--light-black);
 }
 .header-menu .btn-find {
   font-size: 24px;
@@ -1957,6 +1959,7 @@ a:focus, a:hover {
   position: relative;
   width: 25px;
   cursor: pointer;
+  background-color: var(--Line);
 }
 .mobile-button .burger span {
   display: block;
@@ -2037,7 +2040,7 @@ a:focus, a:hover {
 }
 
 .main-menu .navigation {
-  margin-left: 330px;
+  margin-left: 386px;
   display: flex;
   gap: 40px;
 }
@@ -2048,7 +2051,7 @@ a:focus, a:hover {
 }
 .main-menu .navigation li a {
   font-size: 16px;
-  color: var(--On-surface);
+  color: var(--Surface);
   line-height: 26px;
   font-weight: 700;
 }
@@ -2116,7 +2119,7 @@ a:focus, a:hover {
 }
 .navigation .has-child .submenu {
   min-width: max-content;
-  background-color: var(--White-light);
+  background-color: var(--light-black);
   top: 100%;
   left: 0;
   position: absolute;
@@ -2596,8 +2599,8 @@ a:focus, a:hover {
   justify-content: center;
   padding: 0 32px;
   border-radius: 999px;
-  background-color: var(--On-surface);
-  color: var(--White-light);
+  background-color: white;
+  color: black;
   width: max-content;
   transition: 0.4s cubic-bezier(0.42, 0, 0.58, 1);
   font-size: 16px;
@@ -5921,7 +5924,7 @@ body.dark-mode .dark-logo {
 
 
 .main-menu.lg-hide {
-    padding-right: 116px;
+    padding-right: 69px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6062,6 +6065,8 @@ body.dark-mode .dark-logo {
 
 .main-logooo{
   padding-bottom: 109px;
+  margin-left: 1px;
+
 }
 /* catagory logo responsive */
 
@@ -6243,3 +6248,26 @@ body.dark-mode .dark-logo {
     color: rgb(0, 173, 239);
     transition: color 0.3s ease-in-out;
 } */
+
+/* Default (Light Mode) */
+/* Menu Links */
+.navigation .text-menu a {
+  color: #000; /* black in light mode */
+  transition: color 0.3s ease;
+}
+
+body.dark-mode .navigation .text-menu a {
+  color: #fff; /* white in dark mode */
+}
+
+/* Social Icons – always white */
+.tf-social a {
+  color: #fff !important; /* always white */
+  transition: color 0.3s ease;
+}
+.header-menu.style-default {
+    background-color: var(--light-black); /* same as your dark header */
+    border-top: none;  /* remove any top border */
+}
+
+
